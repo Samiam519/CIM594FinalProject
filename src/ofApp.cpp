@@ -121,8 +121,8 @@ void ofApp::checkIntersection(double x1, double y1, double x2, double y2, double
             particleCount++;
             for (int i = 0; i < 500; i++){
                 Particle2 myParticle;
-                float vx = ofRandom(-50,50);
-                float vy = ofRandom(-5,100);
+                float vx = ofRandom(-25,25);
+                float vy = ofRandom(-5,75);
                 myParticle.setInitialCondition((float)intersect.x, (float)intersect.y, vx, vy);
                 myParticle.damping = ofRandom(0.01, 0.05);
                 explosion.push_back(myParticle);
